@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-static
+  name: jquery
   namespace: jquery
 spec:
   selector: 
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: jquery
-        image: 693675909033.dkr.ecr.us-east-2.amazonaws.com/jquery-eks:$BUILD_NUMBER
+        image: 693675909033.dkr.ecr.us-east-2.amazonaws.com/jquery-eks:$BUILD_NUMBER  
         ports:
         - containerPort: 80
